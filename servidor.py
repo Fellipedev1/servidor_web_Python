@@ -14,9 +14,9 @@ def start_server():
     porta = 8080
     handler = http.server.SimpleHTTPRequestHandler
     # Diretório da subpasta que contém os arquivos HTML
-    pasta_servidor = os.path.join(os.getcwd(), "site_festa_junina")
+    pasta_servidor = os.path.join(os.getcwd(), "coloque_seu_site_aqui")
 
-    print(f"Servidor está rodando em: http://seuIPaqui:{porta}")
+    print(f"Servidor está rodando em: http://SEU_IP_AQUI:{porta}")
 
     with socketserver.TCPServer(('0.0.0.0', porta), handler) as httpd:
         os.chdir(pasta_servidor)  # Muda o diretório para a subpasta
